@@ -86,8 +86,9 @@ The dataset contains information about global layoffs including:
 ---
 
 ## 📎 Project Files
-
-* `Data_cleaning.sql` → Complete SQL script for cleaning dataset
+- raw_layoffs.csv → Original dataset  
+- cleaned_layoffs.csv → Cleaned dataset  
+- layoffs_data_cleaning.sql → SQL script  
 
 ---
 
