@@ -135,7 +135,7 @@ FROM layoffs_staging2
 WHERE industry IS NULL 
 OR industry = '';
 
--- filling numm or blank values 
+-- filling num or blank values 
 SELECT *
 FROM layoffs_staging2
 WHERE company LIKE 'Bally%';
