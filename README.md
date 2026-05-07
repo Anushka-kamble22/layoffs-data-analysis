@@ -1,100 +1,100 @@
-# 📊 Layoffs Data Cleaning Project (SQL)
+# Layoffs Data Cleaning & Exploratory Data Analysis using SQL
 
-## 📌 Overview
+## Project Overview
+This project focuses on cleaning and analyzing a global layoffs dataset using SQL. The objective of this project is to transform raw data into meaningful insights through data cleaning and exploratory data analysis (EDA).
 
-This project focuses on cleaning and preparing a real-world layoffs dataset using SQL. The goal is to transform raw, inconsistent data into a structured and analysis-ready format.
+The project demonstrates practical SQL skills used in real-world data analytics workflows, including data preprocessing, trend analysis, aggregation, ranking, and business insight generation.
 
----
 
-## 🎯 Objectives
 
-* Remove duplicate records
-* Standardize inconsistent data
-* Handle null and blank values
-* Convert data types for better usability
-* Prepare dataset for further analysis
+## Tools & Technologies
+- MySQL
+- SQL
+- GitHub
 
----
 
-## 🛠 Tools & Technologies
 
-* SQL (MySQL)
-* Window Functions
-* Joins
-* Data Cleaning Techniques
+## Dataset Information
+The dataset contains information related to layoffs across different companies, industries, and countries.
 
----
+### Key Columns:
+- Company
+- Industry
+- Country
+- Total Laid Off
+- Percentage Laid Off
+- Funds Raised
+- Date
 
-## 📂 Dataset
 
-The dataset contains information about global layoffs including:
+## Project Workflow
 
-* Company
-* Location
-* Industry
-* Total layoffs
-* Percentage layoffs
-* Date
-* Funding stage
-* Country
-* Funds raised
+### 1. Data Cleaning
+The data cleaning process involved:
+- Removing duplicate records
+- Handling null and missing values
+- Standardizing inconsistent data
+- Formatting date columns
+- Cleaning text fields for consistency
 
----
+### 2. Exploratory Data Analysis (EDA)
+Performed SQL analysis to identify:
+- Companies with the highest layoffs
+- Industry-wise layoffs trends
+- Country-wise layoffs analysis
+- Yearly layoffs trends
+- Rolling total layoffs over time
+- Top companies by layoffs each year
 
-## 🔄 Data Cleaning Steps
 
-### 1. Removing Duplicates
 
-* Used `ROW_NUMBER()` with `PARTITION BY`
-* Identified duplicate rows
-* Deleted extra records while keeping unique entries
+## SQL Concepts Used
+This project includes the use of:
 
-### 2. Standardizing Data
+- Common Table Expressions (CTEs)
+- Window Functions
+- Aggregate Functions
+- GROUP BY
+- ORDER BY
+- Subqueries
+- DENSE_RANK()
+- Rolling Totals
+- Date Functions
 
-* Removed extra spaces using `TRIM()`
-* Standardized industry names (e.g., Crypto)
-* Fixed inconsistent country names (e.g., United States)
-* Converted date format from text to `DATE`
 
-### 3. Handling Null & Blank Values
 
-* Replaced blank values with `NULL`
-* Filled missing industry values using self join
-* Removed rows where critical data was missing
+## Key Insights
+- Identified companies with the largest layoffs
+- Analyzed industries most impacted by layoffs
+- Observed layoffs trends across different years
+- Compared layoffs across countries
+- Calculated cumulative layoffs over time using window functions
 
-### 4. Removing Unnecessary Columns
 
-* Dropped helper column (`row_num`) after cleaning
 
----
+## Project Structure
 
-## 📈 Key Learnings
+Layoffs-Data-Analysis/
+│
+├── data_cleaning.sql
+├── exploratory_data_analysis.sql
+├── cleaned_data.csv
+└── README.md
 
-* Practical use of SQL window functions
-* Data cleaning workflow in real-world datasets
-* Importance of data consistency before analysis
-* Handling missing and duplicate data efficiently
 
----
 
-## 🚀 Future Improvements
+## Learning Outcomes
+Through this project, I strengthened my understanding of SQL and data analysis by working with real-world layoffs data. This project helped me improve my skills in:
 
-* Perform Exploratory Data Analysis (EDA)
-* Build dashboards using Power BI / Excel
-* Create insights on layoffs trends
+- Writing structured and efficient SQL queries
+- Performing data cleaning and preprocessing
+- Using CTEs and Window Functions
+- Conducting exploratory data analysis (EDA)
+- Identifying trends and business insights from data
+- Working with aggregate and ranking functions
+- Organizing and documenting projects using GitHub
 
----
 
-## 📎 Project Files
-- raw_layoffs.csv → Original dataset  
-- cleaned_layoffs.csv → Cleaned dataset  
-- layoffs_data_cleaning.sql → SQL script  
 
----
-
-## 💡 Author
-
-**Anushka Kamble**
-Aspiring Data Analyst
-
----
+## Author
+Anushka Kamble
